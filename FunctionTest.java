@@ -11,13 +11,13 @@ public class FunctionTest {
 		float avg = myFun.findAverage(15, 24, 65);
 		System.out.println("The average is "+avg);
 		double dist = myFun.findTheDistanceBetweenSunAndEarth();
-		System.out.println("Distance between Sun and Earth is "+dist);
+		System.out.println("Distance between Sun and Earth is "+dist+" KM");
 		
 		System.out.println("Starting my Own Functions.....");
 		myOwnFunctions fun2 = new myOwnFunctions();
 		fun2.waterThePlants();
 		fun2.addTheseNumbers(54, 75);
-		String fullName = fun2.fullName("Mr", "Hara", "Prasad", "Mohanta");
+		String fullName = fun2.getFullName("Mr", "Hara", "Prasad", "Mohanta");
 		System.out.println("Full name is: "+fullName);
 		String greetings = fun2.whatsUp();
 		System.out.println(greetings);
@@ -34,7 +34,7 @@ class myOwnFunctions
 		int tot = num1+num2;
 		System.out.println("Total value is "+tot);
 	}
-	String fullName(String title, String firstName, String middleName, String lastName ) {
+	String getFullName(String title, String firstName, String middleName, String lastName ) {
 		return title +" " + firstName + " " + middleName + " " + lastName;
 	}
 	String whatsUp() {
